@@ -47,7 +47,7 @@ void loop() {
       ledStatus = 1;  //SET ledStatus TO ON
       digitalWrite(LED, HIGH);  //TURN ON LED
   }
-  else if(req.indexOf("/ledoff") != 1){ //IF WE FOUND /ledoff IN REQUEST URL
+  else if(req.indexOf("/ledoff") != -1){ //IF WE FOUND /ledoff IN REQUEST URL
       ledStatus = 0;  //SET ledStatus TO OFF
       digitalWrite(LED, LOW);  //TURN OFF LED
   }
